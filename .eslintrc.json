@@ -23,6 +23,7 @@
         "react"
     ],
     "rules": {
+        "object-curly-spacing" : "off",
         "react/prop-types": "off",
         "require-jsdoc" : 0,
         "max-len": "off",

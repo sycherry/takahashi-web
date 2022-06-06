@@ -11,7 +11,7 @@ function ContactForm() {
   const pageDescription = '髙橋昌之建築事務所のお問い合わせのページです。';
 
   useEffect(() => {
-    const toggleInputContainer = function (input) {
+    const toggleInputContainer = (input) => {
       if (input.value != '') {
         input.classList.add('filled');
       } else {
@@ -21,7 +21,7 @@ function ContactForm() {
     const inputs = document.getElementsByClassName('input');
     for (let i = 0; i < inputs.length; i++) {
       console.log('looped');
-      inputs[i].addEventListener('keyup', function () {
+      inputs[i].addEventListener('keyup', () => {
         toggleInputContainer(inputs[i]);
       });
       toggleInputContainer(inputs[i]);
