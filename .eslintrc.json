@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@next/next/recommended",
+        "plugin:@next/next/recommended",
+        "google",
+        "next"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/prop-types": "off",
+        "require-jsdoc" : 0,
+        "max-len": "off",
+        "no-unused-vars": "off",
+        "react/display-name": "off",
+        "new-cap": "off",
+        "react/no-children-prop": "off",
+        "indent": ["error", 2, {
+  "ignoredNodes": ["TemplateLiteral"]
+}]
+    }
+}

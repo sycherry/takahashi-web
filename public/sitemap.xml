@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.496Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/buildrss</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/news</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/privacy</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/profile</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/profile2</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/works</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/news/守谷日本空間デザイン賞</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/news/新しいインテリアデザインをアップしました。</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/news/ホームページをリニューアルしました。</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/works/東京の美容室</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/works/名古屋のエステサロン</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/works/センター南の店舗</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/works/荻窪の移動本屋</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/news/page/2</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+<url><loc>https://nextjs-contentful-blog-starter.vercel.app/works/page/2</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-07T05:16:41.497Z</lastmod></url>
+</urlset>

@@ -1,0 +1,13 @@
+{
+    "forms": {
+      "contactForm": {
+        "name": "takahashi-form",
+        "actions": [{ "type": "email", "to": "sycherry53@gmail.com" }],
+        "fields": {
+            "neme": {"type": "text", "required": false},
+            "email": {"type": "email", "required": false},
+            "message": {"type": "text", "required": false}
+          }
+      }
+    }
+  }

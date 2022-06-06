@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://tkms66.com/
+
+# Sitemaps
+Sitemap: http://tkms66.com/sitemap.xml
+Sitemap: http://tkms66.com/server-sitemap.xml
