@@ -1,5 +1,8 @@
 module.exports = {
+  experimental: {
+    optimizeFonts: true,
+  },
   images: {
-    domains: ["images.ctfassets.net"],
+    domains: ['images.ctfassets.net'],
   },
 };
