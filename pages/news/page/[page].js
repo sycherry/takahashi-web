@@ -31,7 +31,7 @@ export default function BlogIndexPage(props) {
 }
 
 export async function getStaticPaths() {
-  const totalPosts = await ContentfulApi.getTotalPostsNumber();
+  const totalPosts = await ContentfulApi.getTotalNewsNumber();
   const totalPages = Math.ceil(totalPosts / Config.paginationNews.pageSize);
   const paths = [];
 
@@ -46,7 +46,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params, preview = false }) {
-  const postSummaries = await ContentfulApi.getPaginatedPostSummaries(
+  const postSummaries = await ContentfulApi.getPaginatedNewsSummaries(
     params.page,
   );
   const totalPages = Math.ceil(

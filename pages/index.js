@@ -6,7 +6,7 @@ import Layout from '@components/layout';
 import Image from 'next/image';
 
 export default function Home(props) {
-  const { heroImageData } = props;
+  const { sliderData } = props;
   const pageTitle = '髙橋昌之建築事務所のウェブサイト';
   const pageDescription = '髙橋昌之建築事務所のウェブサイトです。';
   return (
@@ -18,7 +18,7 @@ export default function Home(props) {
           url={Config.pageMeta.home.url}
         />
         <div className="main_imgBox">
-          {heroImageData[0].galleryCollection.items.map((post) => (
+          {sliderData[0].galleryCollection.items.map((post) => (
             <div className="mb-4 main_img" key={post.url}>
               <Image
                 layout="fill"
@@ -35,10 +35,10 @@ export default function Home(props) {
   );
 }
 export async function getStaticProps() {
-  const heroImageData = await ContentfulApi.getTop();
+  const sliderData = await ContentfulApi.getSliderImage();
   return {
     props: {
-      heroImageData,
+      sliderData,
     },
   };
 }

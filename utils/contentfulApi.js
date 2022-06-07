@@ -5,7 +5,6 @@ const defaultOptions = {
 };
 
 export default class ContentfulApi {
-
   // Call the Contentful GraphQL API using fetch.
   static async callContentful(query, options = defaultOptions) {
     const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`;
@@ -34,7 +33,7 @@ export default class ContentfulApi {
   }
 
   /* Front page slider */
-  static async getTop() {
+  static async getSliderImage() {
     const query = `{
     heroImageCollection {
       items{
@@ -50,10 +49,10 @@ export default class ContentfulApi {
   }`;
 
     const response = await this.callContentful(query);
-    const heroImageData = response.data.heroImageCollection.items ?
+    const sliderData = response.data.heroImageCollection.items ?
       response.data.heroImageCollection.items :
       [];
-    return heroImageData;
+    return sliderData;
   }
 
   /* Profile page */
@@ -137,7 +136,6 @@ export default class ContentfulApi {
   }
 
   static async getWorksPaginatedSlugs() {
-
     const query = `{
       worksCollection {  
         total 
@@ -230,8 +228,7 @@ export default class ContentfulApi {
 
   /*  News page */
   // news post list for news list page
-  static async getPaginatedPostSummaries(page) {
-
+  static async getPaginatedNewsSummaries(page) {
     const skipMultiplier = page === 1 ? 0 : page - 1;
     const skip =
       skipMultiplier > 0 ? Config.paginationNews.pageSize * skipMultiplier : 0;
@@ -249,19 +246,6 @@ export default class ContentfulApi {
             body {
               json
               links {
-                entries {
-                  inline {
-                    sys {
-                      id
-                    }
-                    __typename
-                    ... on BlogPost {
-                      title
-                      slug
-                    }
-                  }
-                  
-                }
                 assets {
                   block {
                     sys {
@@ -291,7 +275,7 @@ export default class ContentfulApi {
 
 
   // pagenation
-  static async getTotalPostsNumber() {
+  static async getTotalNewsNumber() {
     const query = `
       {
         blogPostCollection {
