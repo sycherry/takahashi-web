@@ -93,10 +93,8 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params, preview = false }) {
-  const post = await ContentfulApi.getWorksPostBySlug(params.slug, {
-    preview: preview,
-  });
+export async function getStaticProps({ params }) {
+  const post = await ContentfulApi.getWorksPostBySlug(params.slug);
 
   const worksTitleData = await ContentfulApi.getWorksTitle();
 
@@ -108,7 +106,6 @@ export async function getStaticProps({ params, preview = false }) {
 
   return {
     props: {
-      preview,
       post,
       worksTitleData,
     },

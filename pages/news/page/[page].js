@@ -45,7 +45,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params, preview = false }) {
+export async function getStaticProps({ params }) {
   const postSummaries = await ContentfulApi.getPaginatedNewsSummaries(
     params.page,
   );
@@ -54,7 +54,6 @@ export async function getStaticProps({ params, preview = false }) {
   );
   return {
     props: {
-      preview,
       postSummaries: postSummaries.items,
       totalPages,
       currentPage: params.page,

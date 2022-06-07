@@ -1,16 +1,12 @@
 import { Config } from './config';
 
-const defaultOptions = {
-  preview: false,
-};
 
 export default class ContentfulApi {
   // Call the Contentful GraphQL API using fetch.
-  static async callContentful(query, options = defaultOptions) {
+  static async callContentful(query) {
     const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`;
 
-    const accessToken = options.preview ?
-      process.env.NEXT_PUBLIC_CONTENTFUL_PREVIEW_ACCESS_TOKEN :
+    const accessToken =
       process.env.CONTENTFUL_ACCESS_TOKEN;
 
     const fetchOptions = {
@@ -156,9 +152,9 @@ export default class ContentfulApi {
   }
 
   // works post for works single page
-  static async getWorksPostBySlug(slug, options = defaultOptions) {
+  static async getWorksPostBySlug(slug) {
     const query = `{
-      worksCollection (limit: 1, where: {slug: "${slug}"}, preview: ${options.preview}){
+      worksCollection (limit: 1, where: {slug: "${slug}"}){
         total
          items{
           title
@@ -185,7 +181,7 @@ export default class ContentfulApi {
       }
     }`;
 
-    const response = await this.callContentful(query, options);
+    const response = await this.callContentful(query);
     const post = response.data.worksCollection.items ?
       response.data.worksCollection.items :
       [];

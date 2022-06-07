@@ -32,14 +32,13 @@ export default function BlogIndex(props) {
     </Layout>
   );
 }
-export async function getStaticProps({ preview = false }) {
+export async function getStaticProps() {
   const postSummaries = await ContentfulApi.getWorksPaginatedPostSummaries(1);
   const totalPages = Math.ceil(
     postSummaries.total / Config.paginationWorks.pageSize,
   );
   return {
     props: {
-      preview,
       postSummaries: postSummaries.items,
       totalPages,
       currentPage: '1',
