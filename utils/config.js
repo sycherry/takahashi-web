@@ -26,12 +26,15 @@ export const Config = {
       url: SITE_URL,
       slug: '/404',
     },
+    worksIndex: {
+      url: `${SITE_URL}/works`,
+      slug: '/works',
+    },
   },
-  pagination: {
-    pageSize: 2,
-    recentPostsSize: 3,
+  paginationNews: {
+    pageSize: 10,
   },
   paginationWorks: {
-    pageSize: 3,
+    pageSize: 9,
   },
 };

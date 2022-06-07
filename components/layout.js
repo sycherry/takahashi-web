@@ -25,7 +25,7 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <><div id="outer-container" >
+    <div id="outer-container" >
       <div className="md:hidden burger" >
         <BurgerMenu />
       </div>
@@ -45,7 +45,7 @@ export default function Layout({ children }) {
 
               <div className="hidden md:block flex items-center">
                 <ul className="flex justify-end text-sm">
-                  <li className={`${router.pathname == '/works' ? 'opacity-40' : ' '} mr-10 hover:opacity-40 md:duration-500`}>
+                  <li className={`${router.pathname == '/works' ? 'opacity-40' : ' '} mr-10 hover:opacity-40 md:duration-500`}>
                     <Link href="/works">WORKS</Link></li>
                   <li className={`${router.pathname == '/news' ? 'opacity-40' : ' '} mr-10 hover:opacity-40 md:duration-500`}>
                     <Link href="/news">NEWS</Link></li>
@@ -86,6 +86,5 @@ c0.5-1,1.5-1.7,2.6-1.7l0,0c1.1,0,2.1,0.6,2.6,1.7l113.1,248c0.6,1.4,0,3.1-1.4,3.8
         </div>
       </div>
     </div>
-    </>
   );
 }

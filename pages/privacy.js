@@ -12,7 +12,7 @@ export default function Privacy() {
       <PageMeta
         title={`${pageTitle}`}
         description={pageDescription}
-        url={`${Config.pageMeta.blogIndex.url}/privacy`}
+        url={`${Config.pageMeta.home.url}/privacy`}
       />
       <article className="text-xs max-w-screen-md mx-auto px-6 md:px-8 lg:px-10">
         <h2

@@ -18,7 +18,7 @@ export default function PostWrapper(props) {
       <PageMeta
         title={post.title}
         description={`髙橋昌之建築設計事務所の施工事例の${post.title}のページです。`}
-        url={`${Config.pageMeta.blogIndex.url}/${post.slug}`}
+        url={`${Config.pageMeta.worksIndex.url}/${post.slug}`}
       />
 
       <article className="max-w-screen-lg mx-auto leading-none px-6 md:px-8 lg:px-10">
@@ -64,10 +64,10 @@ export default function PostWrapper(props) {
                 <div className="text-sm
                   md:duration-500 md:hover:opacity-40
                   r">
-                  <Link href={previous.slug} >
+                  <Link href={previous.slug} ><a>
                     <button className="flex items-center flex justify-center mx-auto">
                       <p>{previous.title}</p><p className="w-2 ml-2"><ChevronRight /></p></button>
-                  </Link>
+                  </a></Link>
                 </div>
               </div>
             )}

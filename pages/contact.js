@@ -33,13 +33,10 @@ function ContactForm() {
       <PageMeta
         title={`${pageTitle}`}
         description={pageDescription}
-        url={`${Config.pageMeta.blogIndex.url}/contact`}
+        url={`${Config.pageMeta.home.url}/contact`}
       />
       <article className="max-w-xl mx-auto px-6 md:px-8 lg:px-10">
-        <h2
-          className="text-xl md:text-2xl mb-6 md:mb-8 lg:mb-10 uppercase"
-        >Contact
-        </h2>
+        <h2 className="text-xl md:text-2xl mb-6 md:mb-8 lg:mb-10 uppercase">Contact</h2>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4 relative">
@@ -97,8 +94,8 @@ function ContactForm() {
             py-3 px-6 rounded text-white md:duration-500">送信</button>
 
           {state.succeeded ?
-            <><p className="mt-6"> メッセージは送信されました。</p>
-              <p> お問い合わせありがとうございます。</p>
+            <><p className="mt-6">メッセージは送信されました。</p>
+              <p>お問い合わせありがとうございます。</p>
             </> : null}
 
           <input type="hidden" name="_subject"

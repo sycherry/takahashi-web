@@ -18,7 +18,6 @@ export default function PageMeta(props) {
         title={`RSS Feed for ${Config.site.domain}`}
         href={`https://${Config.site.domain}/feed.xml`}
       />
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&amp;display=swap" rel="stylesheet" />
 
       <meta name="title" content={siteTitle} />
       <meta property="og:title" content={title} />
@@ -32,20 +31,13 @@ export default function PageMeta(props) {
       <meta property="twitter:url" content={url} />
 
       <meta property="og:image" content={OpenGraph.generateImageUrl(title)} />
+
       <meta
         property="twitter:image"
         content={OpenGraph.generateImageUrl(title)}
       />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:site"
-        content={`@${Config.pageMeta.openGraph.twitterUser}`}
-      />
-      <meta
-        name="twitter:creator"
-        content={`@${Config.pageMeta.openGraph.twitterUser}`}
-      />
 
       <link rel="icon" href="/favicon.ico" />
 

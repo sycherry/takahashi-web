@@ -12,7 +12,6 @@ export default function PostList(props) {
   const { posts, currentPage, totalPages } = props;
   const nextDisabled = parseInt(currentPage, 10) === parseInt(totalPages, 10);
   const prevDisabled = parseInt(currentPage, 10) === 1;
-  console.log(posts);
   return (
     <article className="max-w-screen-lg mx-auto px-6 md:px-8 lg:px-10">
       <ul>
