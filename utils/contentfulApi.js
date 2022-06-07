@@ -234,10 +234,10 @@ export default class ContentfulApi {
 
     const skipMultiplier = page === 1 ? 0 : page - 1;
     const skip =
-      skipMultiplier > 0 ? Config.pagination.pageSize * skipMultiplier : 0;
+      skipMultiplier > 0 ? Config.paginationNews.pageSize * skipMultiplier : 0;
 
     const query = `{
-        blogPostCollection(limit: ${Config.pagination.pageSize}, skip: ${skip}, order: date_DESC) {
+        blogPostCollection(limit: ${Config.paginationNews.pageSize}, skip: ${skip}, order: date_DESC) {
           total
           items {
             sys {

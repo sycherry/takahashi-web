@@ -20,7 +20,7 @@ export default function BlogIndexPage(props) {
       <PageMeta
         title={`${pageTitle}  ページ${currentPage}`}
         description={pageDescription}
-        url={`${Config.pageMeta.blogIndex.url}/page/${currentPage}`}
+        url={`${Config.pageMeta.worksIndex.url}/page/${currentPage}`}
       />
 
       <WorksList
@@ -35,7 +35,7 @@ export default function BlogIndexPage(props) {
 
 export async function getStaticPaths() {
   const totalPosts = await ContentfulApi.getWorksTotalPostsNumber();
-  const totalPages = Math.ceil(totalPosts / Config.pagination.pageSize);
+  const totalPages = Math.ceil(totalPosts / Config.paginationNews.pageSize);
 
   const paths = [];
 
@@ -54,7 +54,7 @@ export async function getStaticProps({ params, preview = false }) {
     params.page,
   );
   const totalPages = Math.ceil(
-    postSummaries.total / Config.pagination.pageSize,
+    postSummaries.total / Config.paginationWorks.pageSize,
   );
 
   return {

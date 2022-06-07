@@ -20,7 +20,7 @@ export default function BlogIndex(props) {
       <PageMeta
         title={pageTitle}
         description={pageDescription}
-        url={Config.pageMeta.blogIndex.url}
+        url={Config.pageMeta.worksIndex.url}
       />
 
       <WorksList
@@ -35,7 +35,7 @@ export default function BlogIndex(props) {
 export async function getStaticProps({ preview = false }) {
   const postSummaries = await ContentfulApi.getWorksPaginatedPostSummaries(1);
   const totalPages = Math.ceil(
-    postSummaries.total / Config.pagination.pageSize,
+    postSummaries.total / Config.paginationWorks.pageSize,
   );
   return {
     props: {

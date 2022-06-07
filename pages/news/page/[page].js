@@ -32,7 +32,7 @@ export default function BlogIndexPage(props) {
 
 export async function getStaticPaths() {
   const totalPosts = await ContentfulApi.getTotalPostsNumber();
-  const totalPages = Math.ceil(totalPosts / Config.pagination.pageSize);
+  const totalPages = Math.ceil(totalPosts / Config.paginationNews.pageSize);
   const paths = [];
 
   for (let page = 2; page <= totalPages; page++) {
@@ -50,7 +50,7 @@ export async function getStaticProps({ params, preview = false }) {
     params.page,
   );
   const totalPages = Math.ceil(
-    postSummaries.total / Config.pagination.pageSize,
+    postSummaries.total / Config.paginationNews.pageSize,
   );
   return {
     props: {
