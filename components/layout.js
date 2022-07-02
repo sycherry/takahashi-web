@@ -73,7 +73,7 @@ export default function Layout({ children }) {
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 511.7 511.7"
-                //height="86"
+                /* height="86" */
                 height="60"
                 width="328"
               >
