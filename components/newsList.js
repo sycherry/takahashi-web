@@ -13,7 +13,7 @@ export default function PostList(props) {
   const nextDisabled = parseInt(currentPage, 10) === parseInt(totalPages, 10);
   const prevDisabled = parseInt(currentPage, 10) === 1;
   return (
-    <article className="max-w-screen-lg mx-auto px-6 md:px-8 lg:px-10">
+    <article className="mb-10 md:mb-20 g:mb-24 px-6 md:px-8 lg:px-10 pt-6 md:pt-8 lg:pt-10 max-w-screen-lg mx-auto">
       <ul>
         <Accordion allowZeroExpanded>
           {posts.map((post) => (

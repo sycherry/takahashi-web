@@ -2,7 +2,7 @@ import { Config } from './config';
 
 
 export default class ContentfulApi {
-  // Call the Contentful GraphQL API using fetch.
+  // Call the Contentful GraphQL API using fetch
   static async callContentful(query) {
     const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`;
 

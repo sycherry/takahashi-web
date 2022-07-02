@@ -30,8 +30,8 @@ export default function Profile(props) {
           url={`${Config.pageMeta.home.url}/profile`}
         />
         {profileData.map((profileData) => (
-          <article className="max-w-screen-xl mx-auto" key="1">
-            <div className="lg:flex lg:flex-row-reverse lg:px-10">
+          <article className="mb-10 md:mb-20 g:mb-24 px-6 md:px-8 lg:px-10 pt-6 md:pt-8 lg:pt-10 max-w-screen-xl mx-auto" key="1">
+            <div className="lg:flex lg:flex-row-reverse lg:px-0">
               <div className="md:mb-10 lg:mb-0 lg:pt-8 lg:flex-grow lg:pl-16 px-6 md:px-8 lg:px-0">
                 <h2 className="text-xl mb-8 md:mb-10">
                   髙橋 昌之<span className="text-base md:ml-4 mt-2 md:mt-0 block md:inline">MASAYUKI TAKAHASHI</span></h2>
