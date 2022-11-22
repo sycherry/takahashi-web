@@ -101,7 +101,7 @@ function ContactForm() {
             value="ホームページから新しいメッセージが届きました" />
         </form>
 
-        <p className="text-xxs mt-6 underline hover:no-underline
+        <p className="text-2xs mt-6 underline hover:no-underline
           text-center uppercase">
           <Link href={`/privacy/`}>Privacy policy</Link></p>
       </article>

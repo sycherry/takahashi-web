@@ -30,9 +30,9 @@ export default function WorksList(props) {
                 </div>
               </div>
 
-              <p className="text-base mt-2">{post.title}
-                <span className="lg:hidden ml-2 underline
-                      mt-1 md:mt-2 text-gold">more</span></p>
+              <p className="text-center text-base mt-2">{post.title}
+                {/* <span className="lg:hidden ml-2 underline
+                      mt-1 md:mt-2 text-gold">more</span> */}</p>
 
             </div>
           </Link>

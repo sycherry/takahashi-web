@@ -44,7 +44,7 @@ export default function Layout({ children }) {
                 </Link></div>
 
               <div className="hidden md:block flex items-center">
-                <ul className="flex justify-end text-sm">
+                <ul className="flex justify-end text-base">
                   <li className={`${router.pathname == '/works' ? 'opacity-40' : ' '} mr-10 hover:opacity-40 md:duration-500`}>
                     <Link href="/works">WORKS</Link></li>
                   <li className={`${router.pathname == '/profile' ? 'opacity-40' : ' '} mr-10 hover:opacity-40 md:duration-500`}>
@@ -80,7 +80,7 @@ export default function Layout({ children }) {
                 <path d="M369,382.7c-1.1,0-2.1-0.6-2.6-1.7L255.9,138.7L145.3,381c-0.6,1.4-2.3,2-3.8,1.4c-1.4-0.7-2.1-2.3-1.4-3.8l113.2-248
                 c0.5-1,1.5-1.7,2.6-1.7l0,0c1.1,0,2.1,0.6,2.6,1.7l113.1,248c0.6,1.4,0,3.1-1.4,3.8C369.8,382.6,369.4,382.7,369,382.7z"/>
               </svg>}
-            <p className="text-xxs md:text-xxs font-light">
+            <p className="text-2xs font-light">
               &copy; 2021 <Link href={`/`}>
                 MASAYUKI TAKAHASHI ARCHITECTS
               </Link></p>
