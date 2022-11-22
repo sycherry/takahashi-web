@@ -14,7 +14,7 @@ export default function Profile(props) {
   const options = {
     renderNode: {
       [BLOCKS.HEADING_3]: (node, children) => (
-        <h3 className="mb-1">{children}</h3>
+        <h3>{children}</h3>
       ),
       [BLOCKS.UL_LIST]: (node, children) => (
         <ul className="profile mb-6">{children}</ul>
@@ -33,8 +33,10 @@ export default function Profile(props) {
           <article className="mb-10 md:mb-20 g:mb-24 px-6 md:px-8 lg:px-10 pt-6 md:pt-8 lg:pt-10 max-w-screen-xl mx-auto" key="1">
             <div className="lg:flex lg:flex-row-reverse lg:px-0">
               <div className="md:mb-10 lg:mb-0 lg:pt-8 lg:flex-grow pl-0 lg:pl-16 ">
-                <h2 className="text-xl mb-8 md:mb-10">
-                  髙橋 昌之<span className="text-base md:ml-4 mt-2 md:mt-0 block md:inline">MASAYUKI TAKAHASHI</span></h2>
+                <h2 className="text-lg md:text-xl mb-8 md:mb-10">
+                  髙橋 昌之
+                  <span className="text-base md:text-sm md:ml-4 mt-2 md:mt-0 block md:inline">MASAYUKI TAKAHASHI</span>
+                </h2>
                 {documentToReactComponents(profileData.text.json, options)}
               </div>
               <div className="lg:flex-none profile-photo">

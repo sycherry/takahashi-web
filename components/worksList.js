@@ -12,21 +12,28 @@ export default function WorksList(props) {
 
         {posts.map((post) => (
           <Link href={`/works/${post.slug}`} key={post.sys.id} passHref>
-            <div className="flex-item mr-6 md:mr-8 lg:mr-10 mb-6 md:mb-8 lg:mb-10  relative group cursor-pointer mb-4 md:mb-0">
-              <Image
-                src={post.image.url}
-                alt={`Cover Image for ${post.image.url}`}
-                width={800}
-                height={800}
-                blurDataURL={post.image.url}
-                placeholder="blur"
-                objectFit="cover"
-              />
-              <div className="bg-white bg-opacity-60 absolute inset-0 flex items-end pb-4 justify-center  invisible group-hover:visible">
-                <p className="text-sm md:text-sm lg:text-sm mx-6">{post.title}
-                  <span className="lg:hidden ml-2 text-sm md:text-xs underline
-                      text-md mt-1 md:mt-2 text-gold">more</span></p>
+            <div className="flex-item mr-6 md:mr-8 lg:mr-10 mb-6 md:mb-8
+            lg:mb-10 mb-4 md:mb-0">
+
+              <div className="relative group cursor-pointer">
+                <Image
+                  src={post.image.url}
+                  alt={`Cover Image for ${post.image.url}`}
+                  width={800}
+                  height={800}
+                  blurDataURL={post.image.url}
+                  placeholder="blur"
+                  objectFit="cover"
+                />
+                <div className="bg-white bg-opacity-60 absolute inset-0 flex items-end pb-4 justify-center
+              invisible group-hover:visible">
+                </div>
               </div>
+
+              <p className="text-base mt-2">{post.title}
+                <span className="lg:hidden ml-2 underline
+                      mt-1 md:mt-2 text-gold">more</span></p>
+
             </div>
           </Link>
           // <Link href={`/works/${post.slug}`} key={post.sys.id} passHref>
@@ -43,7 +50,7 @@ export default function WorksList(props) {
           //     <div className="z-20 absolute"></div>
           //     <div className="works-list-title mb-4 absolute inset-x-0 bottom-0 flex items-center
           //         justify-center invisible group-hover:visible">
-          //       <p className="text-white text-sm md:text-sm lg:text-sm mx-6">{post.title}
+          //       <p className="text-white text-sm lg:text-sm mx-6">{post.title}
           //         <span className="lg:hidden ml-2 text-sm md:text-xs underline
           //             text-md mt-1 md:mt-2 text-gold">more</span></p>
           //     </div>

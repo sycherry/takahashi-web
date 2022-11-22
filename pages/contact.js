@@ -36,12 +36,12 @@ function ContactForm() {
         url={`${Config.pageMeta.home.url}/contact`}
       />
       <article className="max-w-xl mx-auto px-6 md:px-8 lg:px-10">
-        <h2 className="text-xl md:text-2xl mb-6 md:mb-8 lg:mb-10 uppercase">Contact</h2>
+        <h2 className="text-xl mb-4 uppercase">Contact</h2>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4 relative">
             <input id="name" type="text" name="name"
-              className="text-base input border border-gray-400
+              className="text-lg input border border-gray-400
               appearance-none  w-full
               px-3 py-3 pt-7 pb-2 focus
               focus:outline-none focus:border-black
@@ -58,7 +58,7 @@ function ContactForm() {
 
           <div className="mb-4 relative">
             <input id="email" type="email" name="email"
-              className="text-base input border border-gray-400 appearance-none
+              className="text-lg input border border-gray-400 appearance-none
               w-full px-3 py-3 pt-7 pb-2 focus focus:outline-none
               focus:border-black focus:border-2
               active:border-black"/>
@@ -74,7 +74,7 @@ function ContactForm() {
 
           <div className="mb-4 relative">
             <textarea name="message" id="message" cols="10" rows="6"
-              className="text-base input border border-gray-400 appearance-none
+              className="text-lg input border border-gray-400 appearance-none
               w-full px-3 py-3 pt-7 pb-2 focus focus:outline-none
               focus:border-black focus:border-2
               active:border-black"></textarea>
@@ -90,8 +90,7 @@ function ContactForm() {
           />
 
           <button type="submit" disabled={state.submitting}
-            className="font-light
-            py-3 px-6 rounded text-white md:duration-500">送信</button>
+            className="text-base py-3 px-6 text-white md:duration-500">送信</button>
 
           {state.succeeded ?
             <><p className="mt-6">メッセージは送信されました。</p>
@@ -102,7 +101,7 @@ function ContactForm() {
             value="ホームページから新しいメッセージが届きました" />
         </form>
 
-        <p className="text-xs mt-6 underline hover:no-underline
+        <p className="text-xxs mt-6 underline hover:no-underline
           text-center uppercase">
           <Link href={`/privacy/`}>Privacy policy</Link></p>
       </article>

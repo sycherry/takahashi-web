@@ -25,8 +25,9 @@ export default function PostList(props) {
                     <a>
                       <div className="flex items-center py-4 md:py-4 lg:py-4
                  md:transition md:duration-500 hover:opacity-40">
-                        <div className="text-md w-20"><PublishedDate date={post.date} /></div>
-                        <h2 className="news  pr-4 relative">{post.title}</h2>
+                        <div className="text-base w-20">
+                          <PublishedDate date={post.date} /></div>
+                        <h2 className="news text-base pr-4 relative">{post.title}</h2>
                       </div>
                     </a>
 

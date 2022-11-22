@@ -59,7 +59,7 @@ export default function Layout({ children }) {
 
           </header>
 
-          <main className="text-xs md:text-sm">{children}</main>
+          <main className="text-base">{children}</main>
 
           <footer className="py-6 md:py-8 lg:py-10 text-center">
 

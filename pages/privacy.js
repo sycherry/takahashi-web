@@ -16,7 +16,7 @@ export default function Privacy() {
       />
       <article className="text-xs max-w-screen-md mx-auto px-6 md:px-8 lg:px-10">
         <h2
-          className="text-xl md:text-2xl mb-6 md:mb-8 lg:mb-10 uppercase"
+          className="text-xl mb-4 uppercase"
         >Privacy policy
         </h2>
 

@@ -27,9 +27,9 @@ export default function Test() {
         onStateChange={isMenuOpen}
       >
         <Link className="menu-item" href="/works">WORKS</Link>
-        <Link className="menu-item" href="/news">NEWS</Link>
         <Link className="menu-item" href="/profile">PROFILE</Link>
         <Link className="menu-item" href="/contact">CONTACT</Link>
+        <Link className="menu-item" href="/news">NEWS</Link>
       </Menu>
       <button onClick={toggleMenu}
         className={` ${isOpen ? 'active' : ' '} hamburger

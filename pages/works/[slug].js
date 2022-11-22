@@ -23,7 +23,7 @@ export default function PostWrapper(props) {
 
       <article className="max-w-screen-lg mx-auto leading-none px-6 md:px-8 lg:px-10">
 
-        <h1 className=" mb-6 md:mb-8 lg:mb-10">{post.title}</h1>
+        <h1 className="text-lg mb-6 md:mb-8 lg:mb-10">{post.title}</h1>
 
         {post.galleryCollection.items.map((post) => (
           <div className="mb-6 md:mb-8 lg:mb-10" key={post.url}>
@@ -60,13 +60,13 @@ export default function PostWrapper(props) {
           <div className="py-4 md:py-7 lg:py-10 text-center">
             {previous && (
               <div>
-                <p className="md:text-sm">NEXT WORK</p>
-                <div className="text-sm
+                <p className="text-base mb-2">NEXT WORK</p>
+                <div className="text-base
                   md:duration-500 md:hover:opacity-40
                   r">
                   <Link href={previous.slug} ><a>
                     <button className="flex items-center flex justify-center mx-auto">
-                      <p>{previous.title}</p><p className="w-2 ml-2"><ChevronRight /></p></button>
+                      <p>{previous.title}</p><p className="w-1.5 ml-2"><ChevronRight /></p></button>
                   </a></Link>
                 </div>
               </div>
