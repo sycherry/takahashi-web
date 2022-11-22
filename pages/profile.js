@@ -35,7 +35,9 @@ export default function Profile(props) {
               <div className="md:mb-10 lg:mb-0 lg:pt-8 lg:flex-grow pl-0 lg:pl-16 ">
                 <h2 className="text-lg md:text-xl mb-8 md:mb-10">
                   髙橋 昌之
-                  <span className="text-base md:text-sm md:ml-4 mt-2 md:mt-0 block md:inline">MASAYUKI TAKAHASHI</span>
+                  <span className="text-base md:text-sm
+                  md:ml-10 mt-2 md:mt-0 block md:inline">
+                    MASAYUKI TAKAHASHI</span>
                 </h2>
                 {documentToReactComponents(profileData.text.json, options)}
               </div>

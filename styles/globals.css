@@ -33,17 +33,17 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre, ul, li {
 
   .title-en {
     font-size: 10.8px;
-    letter-spacing: 1.2px !important;
+    letter-spacing: 1.2px;
   }
 
 @media screen and (max-width: 767px) {
   .title-jp {
-    font-size: 16px;
-    letter-spacing: 3.8px;
+    font-size: 16px!important;
+    letter-spacing: 3.8px!important;
   }
 
   .title-en {
-    font-size: 7px;
+    font-size: 7px!important;
     letter-spacing: 1px !important;
   }
 }

@@ -11,14 +11,14 @@ export default function Pagination({ totalPages, currentPage, prevDisabled,
           <Link href={prevPageUrl}>
             <a>
               <div className="p-4 md:p-8">
-                <div className="w-3"><ChevronLeft /></div></div>
+                <div className="w-2.5"><ChevronLeft /></div></div>
             </a>
           </Link>
         )}
 
         {prevDisabled && (
           <div className="p-4 md:p-8">
-            <div className="w-3"></div>
+            <div className="w-2.5"></div>
           </div>)}
       </li>
 
@@ -29,7 +29,7 @@ export default function Pagination({ totalPages, currentPage, prevDisabled,
           <Link href={nextPageUrl}>
             <a>
               <div className="p-4 md:p-8">
-                <div className="w-3"
+                <div className="w-2.5"
                 ><ChevronRight />
                 </div></div>
             </a>
@@ -38,7 +38,7 @@ export default function Pagination({ totalPages, currentPage, prevDisabled,
 
         {nextDisabled && (
           <div className="p-4 md:p-8">
-            <div className="w-3"></div>
+            <div className="w-2.5"></div>
           </div>)}
 
       </li>
