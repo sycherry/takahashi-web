@@ -8,21 +8,10 @@ body {
   font-weight: 300;
   color: #444;
   letter-spacing: 0;
-  /* font-size: 0.8125rem; */
 }
 
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre, ul, li {
   line-height: 1.5rem;
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    line-height: 1rem;
-  }
-
-  dl, dd, h1, h2, h3, h4, h5, h6, hr, p, pre, ul, li {
-    line-height: 1.3rem;
-  }
 }
 
 * {
@@ -53,7 +42,6 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre, ul, li {
 
 
 /* FRONT */
-
 .topPage header {
   position: absolute;
   z-index: 100;
@@ -68,11 +56,9 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre, ul, li {
 }
 
 /* SP NAV MENU */
-
 nav.bm-item-list a:first-child {
   margin-top: 100px!important;
 }
-
 nav.bm-item-list a {
   font-size: 13px;
   display: block;

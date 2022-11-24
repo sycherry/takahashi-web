@@ -81,7 +81,7 @@ export default function Layout({ children }) {
                 c0.5-1,1.5-1.7,2.6-1.7l0,0c1.1,0,2.1,0.6,2.6,1.7l113.1,248c0.6,1.4,0,3.1-1.4,3.8C369.8,382.6,369.4,382.7,369,382.7z"/>
               </svg>}
             <p className="text-2xs font-light">
-              &copy; 2021 <Link href={`/`}>
+              &copy; 2022 <Link href={`/`}>
                 MASAYUKI TAKAHASHI ARCHITECTS
               </Link></p>
           </footer>
