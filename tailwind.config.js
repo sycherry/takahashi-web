@@ -8,8 +8,8 @@ module.exports = {
       'sm': '.70rem',
       'base': '.8125rem',
       'lg': '.9rem',
-      'xl': '1.125rem',
-      // '2xl': '1.5rem',
+      'xl': '1rem',
+      '2xl': '1.125rem',
       // '3xl': '1.875rem',
       // '4xl': '2.25rem',
       // '5xl': '3rem',
@@ -39,11 +39,11 @@ module.exports = {
 // text text-base md:text-sm
 
 // profile
-// title-jp text-lg md:text-xl
+// title-jp text-lg md:text-2xl
 // title-en text-base md:text-sm
 
 // contact
-// title: text-xl
+// title: text-2xl
 // text text-base md:text-sm
 
 // news

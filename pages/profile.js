@@ -14,7 +14,7 @@ export default function Profile(props) {
   const options = {
     renderNode: {
       [BLOCKS.HEADING_3]: (node, children) => (
-        <h3>{children}</h3>
+        <h3 className="mb-1 text-lg">{children}</h3>
       ),
       [BLOCKS.UL_LIST]: (node, children) => (
         <ul className="profile mb-6">{children}</ul>
@@ -33,7 +33,7 @@ export default function Profile(props) {
           <article className="mb-10 md:mb-20 g:mb-24 px-6 md:px-8 lg:px-10 pt-6 md:pt-8 lg:pt-10 max-w-screen-xl mx-auto" key="1">
             <div className="lg:flex lg:flex-row-reverse lg:px-0">
               <div className="md:mb-10 lg:mb-0 lg:pt-8 lg:flex-grow pl-0 lg:pl-16 ">
-                <h2 className="text-xl mb-8 md:mb-10 tracking-wider">
+                <h2 className="text-2xl mb-8 md:mb-10 tracking-wider">
                   髙橋 昌之
                   <span className="text-lg tracking-wider
                   md:ml-10 mt-2 md:mt-0 block md:inline">

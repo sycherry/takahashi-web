@@ -36,12 +36,12 @@ function ContactForm() {
         url={`${Config.pageMeta.home.url}/contact`}
       />
       <article className="max-w-xl mx-auto px-6 md:px-8 lg:px-10">
-        <h2 className="text-xl mb-4 uppercase">Contact</h2>
+        <h2 className="text-2xl mb-4 uppercase">Contact</h2>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4 relative">
             <input id="name" type="text" name="name"
-              className="text-lg input border border-gray-400
+              className="text-xl input border border-gray-400
               appearance-none  w-full
               px-3 py-3 pt-7 pb-2 focus
               focus:outline-none focus:border-black
@@ -58,7 +58,7 @@ function ContactForm() {
 
           <div className="mb-4 relative">
             <input id="email" type="email" name="email"
-              className="text-lg input border border-gray-400 appearance-none
+              className="text-xl input border border-gray-400 appearance-none
               w-full px-3 py-3 pt-7 pb-2 focus focus:outline-none
               focus:border-black focus:border-2
               active:border-black"/>
@@ -74,7 +74,7 @@ function ContactForm() {
 
           <div className="mb-4 relative">
             <textarea name="message" id="message" cols="10" rows="6"
-              className="text-lg input border border-gray-400 appearance-none
+              className="text-xl input border border-gray-400 appearance-none
               w-full px-3 py-3 pt-7 pb-2 focus focus:outline-none
               focus:border-black focus:border-2
               active:border-black"></textarea>
