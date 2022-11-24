@@ -45,7 +45,7 @@ function ContactForm() {
               appearance-none  w-full
               px-3 py-3 pt-7 pb-2 focus
               focus:outline-none focus:border-black
-              focus:border-2  active:border-black" autoFocus />
+              focus:border-2  active:border-black rounded-none"/>
             <label htmlFor="name"
               className="label font-light absolute mb-0 -mt-2 pt-4 pl-3
               leading-tighter text-gray-400 mt-2 cursor-text">名前</label>
@@ -64,7 +64,7 @@ function ContactForm() {
               active:border-black"/>
             <label htmlFor="email" className="label font-light
               absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter
-              text-gray-400  mt-2 cursor-text">メール</label>
+              text-gray-400  mt-2 cursor-text rounded-none">メール</label>
           </div>
           <ValidationError
             prefix="Email"
@@ -80,7 +80,7 @@ function ContactForm() {
               active:border-black"></textarea>
             <label htmlFor="message"
               className="label font-light absolute mb-0 -mt-2 pt-4 pl-3
-              leading-tighter text-gray-400 mt-2 cursor-text">内容</label>
+              leading-tighter text-gray-400 mt-2 cursor-text rounded-none">内容</label>
           </div>
 
           <ValidationError
