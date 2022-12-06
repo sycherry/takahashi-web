@@ -28,7 +28,7 @@ export default function Layout({ children }) {
   return (
     <div id="outer-container" >
       <div className="lg:hidden burger">
-        <BurgerMenu />
+        <BurgerMenu router={router}/>
       </div>
       <div id="page-wrap">
         <div className={`mx-auto  ${router.pathname === '/' ? 'topPage' : null}`}>

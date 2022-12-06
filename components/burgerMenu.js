@@ -5,7 +5,7 @@ import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 
 
-export default function Test() {
+export default function Test({router}) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isOpen, setOpen] = useState(false);
 
@@ -27,10 +27,16 @@ export default function Test() {
 
         <div className="flex flex-col mt-28 pl-4">
           <Link href="/works" passHref>
-            <a className="p-4 text-base">WORKS</a></Link>
-          <Link href="/profile"><a className="p-4 text-base">PROFILE</a></Link>
-          <Link href="/contact"><a className="p-4 text-base">CONTACT</a></Link>
-          <Link href="/news"><a className="p-4 text-base">NEWS</a></Link>
+            <a className={`${router.pathname == '/works' ? 'opacity-40' : ' '} p-4 text-base`}>WORKS</a></Link>
+          <Link href="/profile">
+            <a className={`${router.pathname == '/profile' ? 'opacity-40' : ' '} p-4 text-base`}>PROFILE</a>
+          </Link>
+          <Link href="/contact">
+            <a className={`${router.pathname == '/contact' ? 'opacity-40' : ' '} p-4 text-base`}>CONTACT</a>
+          </Link>
+          <Link href="/news">
+            <a className={`${router.pathname == '/news' ? 'opacity-40' : ' '} p-4 text-base`}>NEWS</a>
+          </Link>
         </div>
       </Drawer>
       <button onClick={toggleMenu}
