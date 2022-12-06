@@ -27,7 +27,7 @@ export default function Layout({ children }) {
 
   return (
     <div id="outer-container" >
-      <div /* className="md:hidden burger" */ >
+      <div className="md:hidden burger">
         <BurgerMenu />
       </div>
       <div id="page-wrap">
