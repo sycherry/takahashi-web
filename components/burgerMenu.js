@@ -42,9 +42,9 @@ export default function Test() {
 
 
       <button onClick={toggleDrawer}
-      className={` ${isOpen ? 'active' : ' '} hamburger
+        className={` ${isOpen ? 'active' : ' '} hamburger
             block md:hidden" type="button`}>
-              <p>test</p>
+        <p>test</p>
         <Hamburger
           size={30}
           duration={1}
