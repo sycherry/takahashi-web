@@ -24,9 +24,10 @@ export default function Layout({ children }) {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
+
   return (
     <div id="outer-container" >
-      <div className="md:hidden burger" >
+      <div /* className="md:hidden burger" */ >
         <BurgerMenu />
       </div>
       <div id="page-wrap">
@@ -59,6 +60,7 @@ export default function Layout({ children }) {
 
           </header>
 
+
           <main className="text-base">{children}</main>
 
           <footer className="py-6 md:py-8 lg:py-10 text-center">
@@ -84,6 +86,8 @@ export default function Layout({ children }) {
               &copy; 2022 <Link href={`/`}>
                 MASAYUKI TAKAHASHI ARCHITECTS
               </Link></p>
+
+
           </footer>
         </div>
       </div>
