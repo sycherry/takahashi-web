@@ -27,7 +27,7 @@ export default function Layout({ children }) {
 
   return (
     <div id="outer-container" >
-      <div className="md:hidden burger">
+      <div className="lg:hidden burger">
         <BurgerMenu />
       </div>
       <div id="page-wrap">
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
                   </a>
                 </Link></div>
 
-              <div className="hidden md:block flex items-center">
+              <div className="hidden lg:block flex items-center">
                 <ul className="flex justify-end text-base">
                   <li className={`${router.pathname == '/works' ? 'opacity-40' : ' '} mr-10 hover:opacity-40 md:duration-500`}>
                     <Link href="/works">WORKS</Link></li>
