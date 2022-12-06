@@ -39,7 +39,7 @@ export default function Layout({ children }) {
                 <Link href="/" passHref>
                   <a>
                     <p className="title-jp z-20 mt-1 md:mt-0">髙橋昌之建築設計事務所</p>
-                    <p className="title-en md:mt-0 leading-snug lg:leading-6">MASAYUKI TAKAHASHI ARCHITECTS</p>
+                    <p className="title-en md:mt-0 leading-5 lg:leading-6">MASAYUKI TAKAHASHI ARCHITECTS</p>
 
                   </a>
                 </Link></div>
