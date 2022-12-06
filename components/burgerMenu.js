@@ -26,10 +26,11 @@ export default function Test() {
       >
 
         <div className="flex flex-col mt-28 pl-4">
-          <p className="block pb-4 text-base"><Link href="/works">WORKS</Link></p>
-          <p className="block pb-4 text-base"><Link href="/profile">PROFILE</Link></p>
-          <p className="block pb-4 text-base"><Link href="/contact">CONTACT</Link></p>
-          <p className="block pb-4 text-base"><Link href="/news">NEWS</Link></p>
+          <Link href="/works" passHref>
+            <a className="p-4 text-base">WORKS</a></Link>
+          <Link href="/profile"><a className="p-4 text-base">PROFILE</a></Link>
+          <Link href="/contact"><a className="p-4 text-base">CONTACT</a></Link>
+          <Link href="/news"><a className="p-4 text-base">NEWS</a></Link>
         </div>
       </Drawer>
       <button onClick={toggleMenu}

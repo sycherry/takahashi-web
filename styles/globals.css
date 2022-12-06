@@ -135,6 +135,16 @@ button[type="submit"]:hover {
 
 
 /* WORKS */
+.image-overlay {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .image:hover .image-overlay{
+    display: block;
+  }
+}
+
+
 
 .flex-set {
   display: -webkit-box;

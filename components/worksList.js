@@ -15,7 +15,7 @@ export default function WorksList(props) {
             <div className="flex-item mr-6 md:mr-8 lg:mr-10 mb-6 md:mb-8
             lg:mb-10 mb-4 md:mb-0">
 
-              <div className="relative group cursor-pointer">
+              <div className="image relative cursor-pointer">
                 <Image
                   src={post.image.url}
                   alt={`Cover Image for ${post.image.url}`}
@@ -25,8 +25,9 @@ export default function WorksList(props) {
                   placeholder="blur"
                   objectFit="cover"
                 />
-                <div className="bg-white bg-opacity-60 absolute inset-0 flex items-end pb-4 justify-center
-              invisible md:group-hover:visible">
+                <div className="image-overlay bg-white bg-opacity-60 absolute
+                inset-0 flex items-end pb-4 justify-center
+              ">
                 </div>
               </div>
 
