@@ -25,17 +25,17 @@ export default function Test({router}) {
         className='bla bla bla'
       >
 
-        <div className="flex flex-col mt-28 pl-4">
+        <div className="flex flex-col mt-28">
           <Link href="/works" passHref>
-            <a className={`${router.pathname == '/works' ? 'opacity-40' : ' '} p-4 text-base`}>WORKS</a></Link>
+            <a className={`${router.pathname == '/works' ? 'opacity-40' : ' '} p-4 pl-6 text-base`}>WORKS</a></Link>
           <Link href="/profile">
-            <a className={`${router.pathname == '/profile' ? 'opacity-40' : ' '} p-4 text-base`}>PROFILE</a>
+            <a className={`${router.pathname == '/profile' ? 'opacity-40' : ' '} p-4 pl-6 text-base`}>PROFILE</a>
           </Link>
           <Link href="/contact">
-            <a className={`${router.pathname == '/contact' ? 'opacity-40' : ' '} p-4 text-base`}>CONTACT</a>
+            <a className={`${router.pathname == '/contact' ? 'opacity-40' : ' '} p-4 pl-6 text-base`}>CONTACT</a>
           </Link>
           <Link href="/news">
-            <a className={`${router.pathname == '/news' ? 'opacity-40' : ' '} p-4 text-base`}>NEWS</a>
+            <a className={`${router.pathname == '/news' ? 'opacity-40' : ' '} p-4 pl-6 text-base`}>NEWS</a>
           </Link>
         </div>
       </Drawer>
