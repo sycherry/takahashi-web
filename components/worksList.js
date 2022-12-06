@@ -26,7 +26,7 @@ export default function WorksList(props) {
                   objectFit="cover"
                 />
                 <div className="bg-white bg-opacity-60 absolute inset-0 flex items-end pb-4 justify-center
-              invisible group-hover:visible group-active:invisible group-focus:invisible">
+              invisible md:group-hover:visible">
                 </div>
               </div>
 
